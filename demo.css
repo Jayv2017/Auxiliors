@@ -1,0 +1,1095 @@
+
+
+
+/***************************************  general ************************************************************/
+
+
+body {
+    margin: 0%;    overflow-x:hidden;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container-fluid {
+    padding: 3% 5% 7%;
+    overflow: hidden;
+}
+
+
+section {
+    padding-top: 80px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************************  NAVBAR  ************************************************************/
+
+  
+  .navbar {
+    height: 80px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    position:fixed;
+    z-index: 100;
+    font-size:15px;
+    transition: background-color 1s ease 0s;
+  }
+  
+  .navbar-default .navbar-brand {
+    margin-top: 10px;
+    color: white;
+  }
+  .navbar-default .navbar-brand:hover {
+    color: #525C72;
+    border: 1px solid #525C72;
+  }
+  .navbar-default .navbar-nav > li > a {
+    color: white;
+    margin: 10px 10px 10px 10px;
+  }
+  .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus {
+    color: #525C72;
+  }
+  .navbar-default .navbar-nav > li > a:visited {
+    color: #525C72;
+    text-decoration: none;
+  }
+  .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background-color: transparent;
+    color: #525C72;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: #525C72;
+  }
+  .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color:#F8F9FB;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    color: #525C72;
+    background-color: #525C72;
+  }
+  .navbar-default .navbar-collapse.collapse.in ul {
+    background-color:#F8F9FB;
+  }
+  
+  /* Solid class attached on scroll past first section */
+  .navbar.solid {
+    background-color:#F8F9FB;
+    transition: background-color 1s ease 0s;
+    box-shadow: 0 0 4px grey;
+  }
+  .navbar.solid .navbar-brand {
+    color: #525C72;
+    transition: color 1s ease 0s;
+  }
+  .navbar.solid .navbar-nav > li > a {
+    color: #525C72;
+    transition: color 1s ease 0s;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************************  Background Wave  ************************************************************/
+
+
+@keyframes move_wave {
+  0% {
+      transform: translateX(0) translateZ(0) scaleY(1)
+  }
+
+  50% {
+      transform: translateX(-25%) translateZ(0) scaleY(0.55)
+  }
+
+  100% {
+      transform: translateX(-50%) translateZ(0) scaleY(1)
+  }
+}
+
+.waveWrapper {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  z-index: -1;
+}
+
+.waveWrapperInner {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+
+  background-image: linear-gradient(to top, aquamarine 20%, rgb(148, 201, 231) 80%);
+  z-index: -1;
+}
+
+.bgTop {
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.bgMiddle {
+  z-index: -1;
+  opacity: 0.75;
+}
+
+.bgBottom {
+  z-index: -1;
+}
+
+.wave {
+  position: absolute;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-repeat: repeat no-repeat;
+  background-position: 0 bottom;
+  transform-origin: center bottom;
+}
+
+.waveTop {
+  background-size: 50% 100px;
+}
+
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+  -webkit-animation: move-wave 3s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.waveMiddle {
+  background-size: 50% 120px;
+}
+
+.waveAnimation .waveMiddle {
+  animation: move_wave 10s linear infinite;
+}
+
+.waveBottom {
+  background-size: 50% 100px;
+}
+
+.waveAnimation .waveBottom {
+  animation: move_wave 15s linear infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************************  Hero Section Content  ************************************************************/
+
+.para {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  width: 100%;
+  transform:translateY(-20px);
+}
+
+
+.content {
+  padding-top: 15%;
+  padding-left: 120px;
+}
+
+
+
+.heading h2{
+  font-size: 6rem;
+}
+
+
+
+
+
+
+@media (max-width: 1020px) {
+  .para {
+      padding-left: 10px;
+      width: 100%;
+      line-height: 1.5;
+  }
+
+  .heading{
+      line-height: 2;
+      width: 100%;
+      padding-left:10px;
+  }
+
+  .content {
+    padding-top: 320px;
+    padding-left: 10px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************************  Hero Section join us Button  ************************************************************/
+
+
+
+
+button {
+  background: #1AAB8A;
+  color: #fff;
+  border: none;
+  position: relative;
+  height: 50px;
+  font-size: 1.3em;
+  padding: 0 2em;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+  transform:translateY(-20px);
+}
+
+button:hover {
+  background: #fff;
+  color: #1AAB8A;
+}
+
+button:before,
+button:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #1AAB8A;
+  transition: 400ms ease all;
+}
+
+button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+button:hover:before,
+button:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}
+
+
+
+@media (max-width: 1020px) {
+  button {
+      line-height: 1.5;
+      margin-top: 20px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************************  Type text thingy  ************************************************************/
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+
+
+.heading {
+	position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************************  Section 2  ************************************************************/
+
+
+
+
+
+.section-2 {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+}
+
+#navlist li {
+  display: inline;
+  list-style-type: none;
+  padding-right: 20px;
+  float: center;
+}
+
+.section-2-head {
+  font-size: 2.5rem;
+  margin-top: 20px;
+}
+
+
+.section-2-para {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.fa-heart {
+  color: red;
+  size: 3cm;
+}
+
+
+
+
+@media (max-width: 1020px) {
+  .section-2-para {
+      width: 90%;
+      padding-left: 40px;
+      line-height: 1.5;
+      margin-top: 40px;
+  }
+
+  .section-2 {
+      padding-top: 190px;
+  }
+
+
+  #navlist {
+      margin-top: 30px;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 3rd section */
+
+.section-3 {
+  background-image: url("img/Group\ 16.svg");
+  background-size: cover;
+  -webkit-background-size: cover;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-position: center;
+  padding-top: 40px;
+
+}
+
+
+
+
+
+#box {
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 50%;
+  width: 20vw;
+  height: 20vw;
+  margin: 5vw;
+
+}
+
+#box:hover {
+  box-shadow: 0px 0px 10px;
+}
+
+
+
+
+.feature-title {
+  font-size: 1.5rem;
+}
+
+.feature-box {
+  padding: 4.5%;
+}
+
+.icon {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #ff4c68;
+}
+
+.container-fluid {
+  padding: 3% 5% 7%;
+  overflow: hidden;
+}
+
+
+
+@media (max-width: 1020px) {
+  .inside-content {
+      text-align: center;
+      padding-top: 20px;
+
+  }
+
+
+  .feature-title {
+      font-size: 1rem;
+  }
+
+  .feature-box {
+      padding: 2%;
+  }
+
+  .icon {
+      color: #ef8172;
+      margin-bottom: 0.1rem;
+      size: 10px;
+  }
+
+  #box {
+      width: 200px;
+      height: 200px;
+      margin: 5px;
+      align-items: center;
+  }
+
+  body {
+      text-align: center;
+  }
+
+  .section-3 {
+      margin-top: 180px;
+      background-image: url("img/Group\ 16.svg");
+      width: 100%;
+      padding-left: 20px;
+
+  }
+
+  #whole {
+      padding-left: 50px;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Section 4 */
+
+.team {
+  top: -20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.fa-check {
+  color: green;
+}
+
+.head {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  margin-top: 60px;
+}
+
+.para {
+  font-size: 22px;
+  color: #151439;
+  opacity: 0.9;
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+
+
+.li-head {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+
+.li-para {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #151439;
+  opacity: 0.8;
+  width: 90%;
+}
+
+
+
+.li-elements {
+  padding-left: 8px;
+}
+
+.content {
+  margin-top: -300px;
+}
+
+.section-4 {
+  padding-left: 20px;
+
+}
+
+
+
+
+@media (max-width: 1020px) {
+  .li-para {
+      width: 90%;
+      margin-left: 15px;
+      padding-left: 10px;
+  }
+
+  .li-elements {
+      margin-top: 20px;
+      padding-left: 20px;
+      padding-left: 10px;
+  }
+
+  .team {
+      margin-top: 80px;
+      object-fit: cover;
+      width: 140%;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+Section 5 */
+
+
+.section-5 {
+  background-image: url("img/Group\ 10.png");
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+
+.testimonial {
+  margin-top: 20px;
+  width: 90%;
+  font-style: italic;
+}
+
+
+.cluster {
+  width: 90%;
+}
+
+
+@media (max-width: 1020px) {
+  .section-5 {
+      margin-top: 200px;
+      background-image: none;
+      background-color: #DEF2F1;
+
+  }
+
+  .testimonial {
+      margin-left: 50px;
+      width: 90%;
+  }
+
+
+  .cluster {
+
+      margin-bottom: 100px;
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************************SECTION-6*****************************************/
+
+.yellow-wave{
+  width:100vw;
+  height:auto;
+  overflow: hidden;
+  position: relative;
+  background-position: center;
+}
+
+
+@media (max-width: 1020px) {
+  .yellow-wave{
+    transform:TranslateX(0px);
+    width:100vw;
+  }
+  #iphone-text{
+    transform:translateY(-200px);
+  }
+
+}
+
+@media (min-width: 1020px) {
+  #iphone-text{
+    transform:translateY(-600px);
+  }
+}
+
+
+
+#iphone-text{
+  text-align: center;
+  width:70%;
+  margin-left:15%;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1020px) {
+  .iphone{
+    width:40vw;
+    height:Auto;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************************FOOTER*****************************************/
+
+
+
+
+
+.footer{
+  position:Absolute;
+  top:800vh;
+  width:100vw;
+  background-color:#17242A;
+}
+
+.footer i{
+  color:White;
+}
+
+
+.end-credits{
+  color:White;
+  transform:TranslateX(25px);
+}
